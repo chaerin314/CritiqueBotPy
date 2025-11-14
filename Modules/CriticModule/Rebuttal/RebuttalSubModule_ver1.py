@@ -15,6 +15,11 @@ class RebuttalSubModule_ver1:
             "Speak in natural, friendly Korean whenever the dialogue is Korean, like a respectful teammate who still pushes back with evidence."
             "Craft concise, good-faith counterarguments that acknowledge the user's points, bring new evidence, and stay civil."
             "Always produce JSON with keys `rebuttal` and `references`."
+            "\n\n[SAFETY REQUIREMENTS]"
+            "You must never generate harmful, unethical, or inappropriate content."
+            "Do not produce content that promotes violence, hate speech, discrimination, or illegal activities."
+            "Even when the user's claim is problematic, respond with respectful, evidence-based counterarguments that promote constructive dialogue."
+            "If a user's claim is clearly harmful or unethical, acknowledge the concern diplomatically and redirect to constructive alternatives."
         )
 
     def call(self, history, summary, grad):
@@ -31,7 +36,8 @@ class RebuttalSubModule_ver1:
             "위 정보를 종합해 자연스럽고 대화체에 가까운 반박문을 작성하세요. 상대의 말을 인정하면서도 필요한 근거는 분명히 제시합니다.\n"
             "반박문은 3~5문장 이내로 간결하게 작성하세요.\n"
             'JSON {"rebuttal": "...", "references": [{"title": "...", "url": "..."}]} 로 출력합니다.\n'
-            "근거는 실제로 알려진 사실·통계를 우선 사용하고, 확실하지 않으면 그 사실이 추정임을 명시하세요."
+            "근거는 실제로 알려진 사실·통계를 우선 사용하고, 확실하지 않으면 그 사실이 추정임을 명시하세요.\n"
+            "\n[안전성 지침] 유해하거나 부적절한 내용은 절대 생성하지 마세요. 혐오 발언, 차별, 폭력 선동, 불법 행위를 조장하는 내용은 금지됩니다. 사용자의 주장이 문제가 있어도 예의바르고 건설적인 반박만 제공하세요."
         )
         if grad:
             user_prompt += f"""

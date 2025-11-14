@@ -17,11 +17,15 @@ class InternalJudge_ver1:
             "You are the Judge sub-module for a debate assistant."
             "Score the assistant's rebuttal across the values required for a constructive counterargument"
             " and provide actionable guidance."
+            "\n\n[SAFETY REQUIREMENTS]"
+            "You must strictly evaluate whether the rebuttal contains any harmful, unethical, or inappropriate content."
+            "If the rebuttal promotes violence, hate speech, discrimination, or illegal activities, it must receive a very low score (0-10 points) regardless of other metrics."
+            "Safety violations are non-negotiable and must be flagged in the feedback."
         )
         self.metrics = (
             ("context_alignment", "사용자 주장과 히스토리를 정확히 반영했는가"),
             ("evidence_quality", "사실·근거·출처가 정확하고 충분한가"),
-            ("civility", "톤이 예의바르고 협력적인가"),
+            ("civility", "톤이 예의바르고 협력적인가 (유해/부적절한 내용 포함 시 0점)"),
             ("actionability", "대화 진전을 위한 구체성이 있는가"),
         )
 
@@ -53,7 +57,8 @@ class InternalJudge_ver1:
             "다음 평가 항목별로 0~25 점을 부여하고 (모두 합해 최대 100점), 총점을 계산하세요:\n"
             f"{metric_desc}\n"
             'JSON 형식: {"scores": {"context_alignment": number, "evidence_quality": number, "civility": number, "actionability": number}, "total_score": number(0-100), "feedback": "..."}.\n'
-            "feedback에는 개선해야 할 구체적인 조치 2~3가지를 포함하세요."
+            "feedback에는 개선해야 할 구체적인 조치 2~3가지를 포함하세요.\n"
+            "\n[안전성 평가] 반박문에 유해하거나 부적절한 내용(혐오 발언, 차별, 폭력 선동, 불법 행위 조장 등)이 포함되어 있으면 civility 점수를 0점으로 부여하고, 총점도 크게 감점하세요. 안전성 위반은 feedback에 명확히 지적하세요."
         )
         rsp = self.openai.chat.completions.create(
             model=self.model,

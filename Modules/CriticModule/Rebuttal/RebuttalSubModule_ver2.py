@@ -33,6 +33,11 @@ class RebuttalSubModule_ver2:
             "You are the Rebuttal sub-module for a conversational debate assistant."
             "Speak in a natural, friendly Korean tone when the dialogue is Korean, acknowledging the user's points while presenting evidence-backed counterarguments."
             "Only use the evidence provided (검색 결과 및 요약) and always produce JSON with keys `rebuttal` and `references`."
+            "\n\n[SAFETY REQUIREMENTS]"
+            "You must never generate harmful, unethical, or inappropriate content."
+            "Do not produce content that promotes violence, hate speech, discrimination, or illegal activities."
+            "Even when the user's claim is problematic, respond with respectful, evidence-based counterarguments that promote constructive dialogue."
+            "If a user's claim is clearly harmful or unethical, acknowledge the concern diplomatically and redirect to constructive alternatives."
         )
 
     def _call_model(self, prompt: str, tag: str = "Rebuttal") -> str:
@@ -171,7 +176,8 @@ class RebuttalSubModule_ver2:
             "위 검색 근거와 대화 요약에 명시된 사실만 사용해 자연스럽고 친근한 반박문을 작성하세요. 상대의 주장도 짧게 인정한 뒤, 근거를 들며 차분히 반박하세요.\n"
             "반박문은 3~5문장 이내로 간결하게 작성하세요.\n"
             'JSON {"rebuttal": "...", "references": [{"title": "...", "url": "..."}]} 형식으로 출력하세요.\n'
-            "각 근거가 어느 검색 결과에서 왔는지 문장 내에서 자연스럽게 언급하세요."
+            "각 근거가 어느 검색 결과에서 왔는지 문장 내에서 자연스럽게 언급하세요.\n"
+            "\n[안전성 지침] 유해하거나 부적절한 내용은 절대 생성하지 마세요. 혐오 발언, 차별, 폭력 선동, 불법 행위를 조장하는 내용은 금지됩니다. 사용자의 주장이 문제가 있어도 예의바르고 건설적인 반박만 제공하세요."
         )
         if grad_text:
             user_prompt += f"""
