@@ -12,13 +12,12 @@ from tavily import TavilyClient
 from Modules.CLIModule import CLIModule
 from Modules.CriticModule import CriticFactory
 from Modules.EXPModule import EXPModule
-from Modules.StreamlitModule import StreamlitModule
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="CritiqueBot runner")
     parser.add_argument("--config", default="config.txt", help="경로 지정 (기본: config.txt)")
-    parser.add_argument("--mode", choices=["cli", "exp", "streamlit"], help="실행 모드 강제 지정")
+    parser.add_argument("--mode", choices=["cli", "exp"], help="실행 모드 강제 지정")
     parser.add_argument("--version", help="모듈 버전 구성(JSON 또는 프리셋 이름)")
     parser.add_argument("--experiment", help=argparse.SUPPRESS)
     parser.add_argument("--exp-dir", help="실험 CSV 디렉터리 (in/out/exp_config 포함)")
@@ -28,7 +27,6 @@ def parse_args():
 
 def load_clients(config: dict):
     openai_key = config.get("openai_api_key") #or os.environ.get("OPENAI_API_KEY")
-    print(openai_key)
     if not openai_key:
         raise RuntimeError("OPENAI_API_KEY가 config.txt 또는 환경변수에 설정되어야 합니다.")
 
@@ -90,22 +88,13 @@ def main():
     version_override = args.version or args.experiment or config.get("version")
     critic = factory.get_or_build(version_override)
     cfg_summary, runtime_summary = format_summary(*factory.describe(version_override))
-    print("[CritiqueBot] 실험 구성:", cfg_summary)
-    print("[CritiqueBot] 런타임 모듈:", runtime_summary)
+    if test_mode_flag:
+        print("[CritiqueBot] 실험 구성:", cfg_summary)
+        print("[CritiqueBot] 런타임 모듈:", runtime_summary)
 
     if mode == "cli":
         cli = CLIModule(critic_module=critic, evaluation_module=None)
         cli.run()
-        return
-
-    if mode == "streamlit":
-        print("[CritiqueBot] Streamlit 모드는 app.py를 사용하세요:")
-        print("  streamlit run app.py")
-        print("\n또는 Python에서 직접 실행:")
-        import streamlit.web.cli as stcli
-        import sys
-        sys.argv = ["streamlit", "run", "app.py"]
-        stcli.main()
         return
 
     if mode == "exp":

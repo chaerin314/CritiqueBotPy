@@ -119,7 +119,8 @@ def set_test_mode(flag: bool) -> None:
     global TEST_MODE
     TEST_MODE = bool(flag)
     SUBMODULE_PROGRESS_LOGGER.set_enabled(not TEST_MODE)
-    print(f"[CritiqueBot] TEST_MODE set to {TEST_MODE}")
+    if TEST_MODE:
+        print(f"[CritiqueBot] TEST_MODE set to {TEST_MODE}")
 
 
 def _format_history_for_prompt(history: Optional[List[Dict[str, str]]]) -> str:

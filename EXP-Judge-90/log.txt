@@ -1,0 +1,103 @@
+[CritiqueBot] TEST_MODE set to False
+[CritiqueBot] (exp) 버전 구성: {'summarizer': {'version': 'v1', 'model': 'gpt-5-chat-latest'}, 'rebuttal': {'version': 'v2', 'model': 'gpt-5-chat-latest'}, 'judge': {'version': 'v1', 'model': 'gpt-5-chat-latest'}, 'textgrad': {'version': 'v1', 'model': 'gpt-5-chat-latest'}}
+[CritiqueBot] (exp) 런타임 모듈: {'summarizer': {'class': 'SummarizerSubModule_ver1', 'model': 'gpt-5-chat-latest'}, 'rebuttal': {'class': 'RebuttalSubModule_ver2', 'model': 'gpt-5-chat-latest'}, 'judge': {'class': 'InternalJudge_ver1', 'model': 'gpt-5-chat-latest'}, 'textgrad': {'class': 'TextGradGenerator', 'model': 'gpt-5-chat-latest'}}
+[CritiqueBot] [Row 1/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 2/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 3/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 4/99 | 철학/윤리 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 5/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 6/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 7/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 8/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Fail 85.0/90 TextGrad Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 9/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 10/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 11/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 12/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 13/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 14/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 15/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 16/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 17/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 18/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 19/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 20/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 21/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 22/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 23/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 24/99 | 평등 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 25/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 26/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 27/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 28/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 29/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 30/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 31/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 32/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 33/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 34/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 35/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 36/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 37/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 38/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 39/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 40/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 41/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 42/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 43/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 44/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 45/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 46/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 47/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 48/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 49/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 50/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 51/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 52/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 53/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 54/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 55/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 56/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 57/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 58/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 59/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 60/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 61/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 62/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 63/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 64/99 | 생명윤리/바이오 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 65/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 66/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 67/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 85.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 68/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 69/99 | 교육/학교/청소년 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 70/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 71/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 72/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 73/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 74/99 | 환경/에너지 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 75/99 | 평등 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 76/99 | 평등 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 77/99 | 평등 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 78/99 | 평등 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 79/99 | 평등 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 80/99 | 철학/윤리 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 84.0/90 TextGrad Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Fail 85.0/90 TextGrad
+[CritiqueBot] [Row 81/99 | 철학/윤리 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 82/99 | 철학/윤리 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 83/99 | 철학/윤리 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 87.0/90 TextGrad Summarizer Rebuttal Judge Pass 94.0/90
+[CritiqueBot] [Row 84/99 | 철학/윤리 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 85/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 86/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 86.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 87/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 93.0/90
+[CritiqueBot] [Row 88/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 89/99 | 정치/시사/경제 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 90/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 91/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 92/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 93/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Fail 89.0/90 TextGrad Summarizer Rebuttal Judge Fail 85.0/90 TextGrad Summarizer Rebuttal Judge Pass 91.0/90
+[CritiqueBot] [Row 94/99 | 사회 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 95/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 96/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 97/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Fail 88.0/90 TextGrad Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] [Row 98/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 90.0/90
+[CritiqueBot] [Row 99/99 | 법률 | Run 1/1 | Turn 1/1] Summarizer Rebuttal Judge Pass 92.0/90
+[CritiqueBot] EXP 완료: /Users/junheelee/Desktop/대화형인공지능/hw2/CritiqueBotPy/EXP-Judge-90/out99-judge90-gpt5chatlatest.csv

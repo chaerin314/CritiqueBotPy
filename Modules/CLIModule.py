@@ -9,24 +9,26 @@ class CLIModule:
         while True:
             if init:
                 history = []
+                print("\n[CritiqueBot] 환영합니다! 저는 여러분의 주장을 정중하게 검토하고 근거를 들어 반박하는 CBot예요.")
+                print("[사용 방법] 주장을 입력하면 제가 반박과 참고 근거를 제공해 드립니다.\n")
                 ipt = input("당신의 주장:").strip()
                 init = False
             else:
                 print("\n다음 중 선택하세요:")
                 print("1) 지금 봇의 반박에 다시 반박하기")
-                print("2) 이 주장/반박에 대한 평가·코칭 받기")
-                print("3) 새로운 주장으로 다시 시작하기")
-                print("4) 종료하기")
+                #print("2) 이 주장/반박에 대한 평가·코칭 받기")
+                print("2) 새로운 주장으로 다시 시작하기")
+                print("3) 종료하기")
                 choice = input("번호: ").strip()
                 if choice == "1":
                     ipt = input("당신의 재반박:").strip()
+                #elif choice == "2":
+                #    print("Not implemented yet.")
+                #    continue
                 elif choice == "2":
-                    print("Not implemented yet.")
-                    continue
-                elif choice == "3":
                     init = True
                     continue
-                elif choice == "4":
+                elif choice == "3":
                     break
                 else:
                     print("Invalid input: ", choice)
