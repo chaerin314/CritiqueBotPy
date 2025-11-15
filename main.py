@@ -12,12 +12,13 @@ from tavily import TavilyClient
 from Modules.CLIModule import CLIModule
 from Modules.CriticModule import CriticFactory
 from Modules.EXPModule import EXPModule
+from Modules.StreamlitModule import StreamlitModule
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="CritiqueBot runner")
     parser.add_argument("--config", default="config.txt", help="경로 지정 (기본: config.txt)")
-    parser.add_argument("--mode", choices=["cli", "exp"], help="실행 모드 강제 지정")
+    parser.add_argument("--mode", choices=["cli", "exp", "streamlit"], help="실행 모드 강제 지정")
     parser.add_argument("--version", help="모듈 버전 구성(JSON 또는 프리셋 이름)")
     parser.add_argument("--experiment", help=argparse.SUPPRESS)
     parser.add_argument("--exp-dir", help="실험 CSV 디렉터리 (in/out/exp_config 포함)")
@@ -95,6 +96,11 @@ def main():
     if mode == "cli":
         cli = CLIModule(critic_module=critic, evaluation_module=None)
         cli.run()
+        return
+
+    if mode == "streamlit":
+        print("[CritiqueBot] Streamlit 모드는 app.py를 사용하세요:")
+        print("  streamlit run app.py")
         return
 
     if mode == "exp":
